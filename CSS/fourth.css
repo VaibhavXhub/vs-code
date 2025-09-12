@@ -1,0 +1,10 @@
+div{
+    height:100px;
+    width:100px;
+    background-color:red;
+    background-image: url("VA_Photo.jpg");
+    background-size: cover;
+    position: fixed;
+    right:0px;
+
+}

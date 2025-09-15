@@ -542,7 +542,71 @@ h2 {
     color: #0F1111;
     font-weight: 550;
 }
+/**............................. LONG BOX ......................................**/
+.longbox {
+    width:100vw;
+    height:260px;
+    background-color:white;
+    margin: 20px 20px 20px 20px;
 
+   
+}
+.long-content
+{
+    height:69%;
+    margin-bottom:5px;
+    display:flex;
+    justify-content:space-evenly;
+}
+.img
+{
+    height:100%;
+    width:200px;
+    padding: 5px 5px 5px 5px;
+    margin:0 10px 10px 10px;
+}
+.img1
+{
+    background-image:url("b1.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2
+{
+    background-image:url("b2.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img3
+{
+    background-image:url("b3.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img4
+{
+    background-image:url("b4.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img5
+{
+    background-image:url("b5.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img6
+{
+    background-image:url("b6.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /**.............................FOOTER......................................**/
 footer {
     background-color: #0f1111;

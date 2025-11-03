@@ -54,10 +54,10 @@ let sum=0;
 let k=0;
 for(let i of item)//giving 10% offer on each product =product*0.9;
 {
-    console.log(`value at indes = ${i} before discount =${i}`);
+    console.log(`value at indes = ${k} before discount =${i}`);
    i=i*0.9;
    item[k]=i;
-   console.log(`value at indes = ${i} after discount =${item[k]}`);
+   console.log(`value at indes = ${k} after discount =${item[k]}`);
     k++;
 }
 

@@ -1,0 +1,29 @@
+*
+{
+    border:border-box;
+    margin:0;
+     background-color:black;
+     color:white;
+}
+.navbar
+{
+    height:60px;
+    width:100%;
+    background-color:rgba(139, 230, 139, 0.47);
+    display:flex;
+}
+.heading
+{
+    color:green;
+    animation: slideIn 1.5s ease-out forwards;
+}
+@keyframes  slideIn{
+    0%{
+        transform: translateY(-100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}

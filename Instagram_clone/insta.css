@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration:none;
 }
 .all
 {
@@ -39,6 +40,12 @@
     padding:20px 50px 40px 50px;;
 
 }
+.login a{
+    color:white;
+    text-decoration:none;
+
+
+}
 h2
 {   position:relative;
     top:50px;
@@ -53,8 +60,10 @@ h2
     background-color:#FAFAFA;
     border:0.5px solid #D3D3D3;;
     border-radius:3px;
+    padding:4px 5px 4px 10px;;
 }
-.input:focus+label
+.input:focus + label,
+.input:not(:placeholder-shown) + label
 {
     font-size:0.5rem;
 }
@@ -102,4 +111,34 @@ h2
     bottom:10px;
     left:10px;
 
+}
+toggle-eye
+{
+    position:relative;
+    left:250px;
+    bottom:30px;
+    cursor:pointer;
+}
+.facebook
+{
+    margin-top:30px;
+    color:blue;
+    font-weight:600;
+}
+.pass
+{
+    margin-top:20px;
+    font-weight:700;
+    color:black;
+}
+.sign-up
+{
+    border:2px solid #D3D3D3;
+    height:60px;
+    width:400px;
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:125px;
 }

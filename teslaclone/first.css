@@ -1,0 +1,102 @@
+* {
+    border: border-box;
+    margin: 0;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    height: 60px;
+    width: 100px;
+    background-image: url("tesla.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.vehicle {
+    display: flex;
+    align-items: center;
+}
+
+.hov {
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+/**....................footer ..................................**/
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.input {
+    height: 37px;
+    display: flex;
+    align-items: center;
+    margin-left:340px;
+    background-color: #f6f4f4fa;
+    border-radius:0px 5px 5px 0px;
+    border:1px solid silver;
+}
+
+.askaques {
+    height: 37px;
+    width: 150px;
+    background-color: #f6f4f4fa;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    border-radius:5px 0px 0px 5px;
+    }
+
+.text {
+    height: 35px;
+    width:380px;
+    background-color: #f6f4f4fa;
+    border-radius: 0px 5px 5px 0px;
+    border:none;
+}
+.ques
+{
+    padding-left:10px;
+    padding-right:10px;
+}
+#a
+{
+    margin-right:18px;
+    font-size:1.2rem;
+    color:white;
+    background-color:black;
+}
+.schedule
+{
+    height:37px;
+    display:flex;
+    align-items: center;
+    margin-left:40px;
+    border:1px solid silver;
+     background-color: #f6f4f4fa;
+}
+.car
+{
+    padding:0px 20px 0px 20px;
+    color:blue;
+}
+.drive
+{
+    padding-right:20px;
+}

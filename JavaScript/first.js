@@ -48,16 +48,78 @@
 // let result=`Username = ${"@"+username+length}`
 // console.log(result);
 
-// 10%off
-let item=[250,300,400,500,600];
-let sum=0;
-let k=0;
-for(let i of item)//giving 10% offer on each product =product*0.9;
-{
-    console.log(`value at indes = ${k} before discount =${i}`);
-   i=i*0.9;
-   item[k]=i;
-   console.log(`value at indes = ${k} after discount =${item[k]}`);
-    k++;
-}
 
+
+
+// 10%off
+// let item=[250,300,400,500,600];
+// let sum=0;
+// let k=0;
+// for(let i of item)//giving 10% offer on each product =product*0.9;
+// {
+//     console.log(`value at indes = ${k} before discount =${i}`);
+//    i=i*0.9;
+//    item[k]=i;
+//    console.log(`value at indes = ${k} after discount =${item[k]}`);
+//     k++;
+// }
+
+
+
+
+//guess the number game 
+// let number = Math.floor(Math.random() * 101);
+// let userno;
+// let count=0;
+// alert("a number is generated between 0 and 100 you have 100 chances to guess your score will be calculated on the basis of that")
+// do
+// {
+//     userno=prompt("enter a number"); 
+//     userno=Number.parseInt(userno);
+//     if(userno<number)
+//     alert("your number is smaller than the actual no");
+//      if(userno>number)
+//     alert("your number is larger than the actual no");
+//     if(Math.abs(userno-number)<=(4))
+//    alert(" you are too close!!! ");
+//     count++;
+//  }while(userno!=number);
+// alert("your Guess is right ..YOu won!!");
+// alert("your score=",(100-count));
+
+// console.log("your Guess is right ..YOu won!!");
+// console.log("your score=",(100-count));
+
+
+
+
+
+
+//Testing all console commands 
+console.log(console);//it will print a soncole button by which we can view other console commands list 
+console.assert(5<7);//give true because assertion is false work like ternary operator 
+console.time("forLoop")
+for(let i=0;i<5;i++)
+{
+    console.log(123);
+}
+console.timeEnd("forLoop")//for fetching the time taken by for loop or any loop but write the label for console.time() and concole.timeEnd() same like it is taken as "forLoop" and "whileLoop"
+console.time("whileLoop")
+let i=0;
+while(i<5)
+{
+    console.log(456);
+    i++
+}
+console.timeEnd("whileLoop");
+console.error("This is an error message");
+obj =
+{
+    name:"Vaibhav",
+    age:18,
+    course:"BCA",
+    college:"Lucknow University",
+};
+console.table(obj);
+console.info("this is an info");
+console.warn("this is a warning");

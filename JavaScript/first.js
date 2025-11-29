@@ -96,30 +96,98 @@
 
 
 //Testing all console commands 
-console.log(console);//it will print a soncole button by which we can view other console commands list 
-console.assert(5<7);//give true because assertion is false work like ternary operator 
-console.time("forLoop")
-for(let i=0;i<5;i++)
-{
-    console.log(123);
+// console.log(console);//it will print a console button by which we can view other console commands list 
+// console.assert(5 < 7);//give true because assertion is false work like ternary operator 
+// console.time("forLoop")
+// for (let i = 0; i < 5; i++) {
+//     console.log(123);
+// }
+// console.timeEnd("forLoop")//for fetching the time taken by for loop or any loop but write the label for console.time() and concole.timeEnd() same like it is taken as "forLoop" and "whileLoop"
+// console.time("whileLoop")
+// let i = 0;
+// while (i < 5) {
+//     console.log(456);
+//     i++
+// }
+// console.timeEnd("whileLoop");
+// console.error("This is an error message");
+// obj =
+// {
+//     name: "Vaibhav",
+//     age: 18,
+//     course: "BCA",
+//     college: "Lucknow University",
+// };
+// console.table(obj);
+// console.info("this is an info");
+// console.warn("this is a warning");
+// document.write("hello world");//it will write on the webpage
+// confirm("are you sure you want to proceed");//it will give a dialog box with ok and cancel button
+
+
+
+
+
+//practice Question 
+//to check whether a user can drive a car or not depending upon his age 
+
+
+// let age = prompt("enter your age");
+// age = Number.parseInt(age);
+
+// // function to check age
+// const canDrive = (age) => {
+//     let out = (age > 18 )? true : false;
+//     return out;
+// }
+// if (canDrive(age)) {
+//     alert("user can drive");
+//     document.write("You can drive !! Congrats");
+// }
+// else
+//     alert("user can not drive");
+
+
+
+//change page background color as per user
+// jump to another website as per user wish 
+// let color=prompt("enter the color of your choice");
+// document.body.style.backgroundColor=color;
+// console.log(`background color changed to ${color}`);
+
+// let web=prompt("enter the website you want to visit in the manner websitename.com");
+// location.href=`https://www.${web}`;
+// console.log(`you are being redirected to http://www.${web}`);
+
+
+
+
+
+// Snake , water , gun game
+
+const chars = ['s', 'w', 'g'];   // your 3 characters
+let randomChar = chars[Math.floor(Math.random() * chars.length)];
+let input = prompt("enter one character between S,W,G");
+alert(randomChar);
+// input = input.toUpperCase();
+console.log(randomChar);
+count = 0;
+while (input != randomChar) {
+    input = prompt("enter  again");
+    // input = input.toUpperCase();   // your 3 characters
+    randomChar = chars[Math.floor(Math.random() * chars.length)];
+    alert(randomChar);
+    count++;
 }
-console.timeEnd("forLoop")//for fetching the time taken by for loop or any loop but write the label for console.time() and concole.timeEnd() same like it is taken as "forLoop" and "whileLoop"
-console.time("whileLoop")
-let i=0;
-while(i<5)
-{
-    console.log(456);
-    i++
-}
-console.timeEnd("whileLoop");
-console.error("This is an error message");
-obj =
-{
-    name:"Vaibhav",
-    age:18,
-    course:"BCA",
-    college:"Lucknow University",
-};
-console.table(obj);
-console.info("this is an info");
-console.warn("this is a warning");
+console.log("your final score =", count);
+document.write("Game over !! well played  your score =", count);
+
+
+
+console.log(document.body.firstChild);
+console.log(document.body.lastChild);
+console.log(document.body.childNodes);
+console.log(document.body.children);
+console.log(document.body.childElementCount);
+
+

@@ -189,5 +189,6 @@ console.log(document.body.lastChild);
 console.log(document.body.childNodes);
 console.log(document.body.children);
 console.log(document.body.childElementCount);
-
+//childnodes is not an array but it is an collection to convert it into an array we need to perform the operation that is array.from(collection)
+// in the elements tab of dev tools whenever we select any elemnt in the website the elememts tab shows $0 in front of it which means that element can be accessed using $0 in the console tab and if we $1 is used to select the previous element
 

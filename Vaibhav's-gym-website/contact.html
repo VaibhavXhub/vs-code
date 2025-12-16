@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BodyFit Gym</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <!-- paste same navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-dark gym-navbar">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="index.html">BodyFit</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gymNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="gymNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-anim active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-anim" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-anim" href="#" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-dark">
+                            <li><a class="dropdown-item" href="pricing.html#strength-training">Strength Training</a>
+                            </li>
+                            <li><a class="dropdown-item" href="pricing.html#cardio">Cardio</a></li>
+                            <li><a class="dropdown-item" href="pricing.html#yoga">Yoga</a></li>
+                            <li><a class="dropdown-item" href="pricing.html#zumba">Zumba</a></li>
+                            <li><a class="dropdown-item" href="pricing.html#personal-training">Personal Training</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-anim" href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-anim" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!--                   dark mode button html                                 -->
+                <button class="btn btn-outline-light ms-2 mx-2" id="themeToggle">
+                    🌙
+                </button>
+
+                <div class="d-flex ms-3 flex-wrap gap-2">
+                    <button class="btn btn-outline-danger me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- CONTACT HERO -->
+    <section class="contact-hero " data-aos="fade-up">
+        <div class="container text-center">
+            <h1>Get In Touch</h1>
+            <p>“The body achieves what the mind believes.”</p>
+        </div>
+    </section>
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="contact-card">
+                        <h5>Main Branch</h5>
+                        <p>📍 Delhi</p>
+                        <a href="tel:+919236667924" class="contact-link">📞 +91 92366 67924</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="contact-card">
+                        <h5>North Branch</h5>
+                        <p>📍 Noida</p>
+                        <a href="tel:+919236667924" class="contact-link">📞 +91 92366 67924</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-card">
+                        <h5>South Branch</h5>
+                        <p>📍 Gurugram</p>
+                        <a href="tel:+919236667924" class="contact-link">📞 +91 92366 67924</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-section py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <div class="col-md-6">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                        <input type="email" class="form-control mb-3" placeholder="Email">
+                        <input type="text" class="form-control mb-3" placeholder="Phone Number">
+                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                        <div class="loader" id="contactLoader"></div>
+                        <div class="success-msg" id="contactSuccess">
+                            ✅ Message sent successfully! We’ll contact you soon.
+                        </div>
+
+                        <button type=button class="btn btn-danger w-100" onclick="submitContactForm()">Submit</button>
+                        <!-- <div class="success-msg" id="contactSuccess">
+                            ✅ Message sent successfully! We’ll contact you soon.
+                        </div> -->
+
+                    </form>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <blockquote class="contact-quote">
+                        “Discipline is choosing between what you want now
+                        and what you want most.”
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="map-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2>Our Locations</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <iframe class="map-frame" src="https://www.google.com/maps?q=Delhi&output=embed"></iframe>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe class="map-frame" src="https://www.google.com/maps?q=Noida&output=embed"></iframe>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe class="map-frame" src="https://www.google.com/maps?q=Gurugram&output=embed"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-heading text-center my-5">
+            <h1>Let's Build a Stronger You</h1>
+            <p>Join BodyFit Gym and transform your lifestyle</p>
+        </div>
+
+        <div class="container py-10">
+            <div class="row g-4">
+
+                <!-- Brand -->
+                <div class="col-md-3">
+                    <h4 class="footer-logo">BodyFit Gym</h4>
+                    <p>
+                        BodyFit Gym is dedicated to transforming lives through fitness,
+                        discipline and consistency.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">Cardio</a></li>
+                        <li><a href="#">Yoga</a></li>
+                        <li><a href="#">Personal Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Language -->
+                <div class="col-md-3">
+                    <h5 class="footer-title">Contact</h5>
+                    <p>Email: support@bodyfitgym.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+
+
+                    <select class="form-select language-select mt-3">
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Spanish</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3">
+            © 2025 BodyFit Gym. All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+
+</body>
+
+</html>

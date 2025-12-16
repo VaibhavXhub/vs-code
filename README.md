@@ -12,6 +12,7 @@ Here I share a collection of small to medium-scale coding projects I’ve built 
 | Amazon_Clone     | A basic Amazon-like frontend (UI only / static) | HTML, CSS, JS |
 | Instagram_clone  | Simple Instagram UI clone | HTML, CSS, JS |
 | MyWebsite        | Personal website / portfolio (static) | HTML, CSS |
+| vaibhav-gym-website | gym-demo-website| HTML, CSS ,JS,AOS animations , Bootstrap |
 | teslaclone       | UI clone of Tesla homepage | HTML, CSS |
 | C/ C++           | Basic C / C++ programs (algorithms, DS) | C, C++ |
 | JavaScript       | JS practice scripts / small projects | JavaScript |
